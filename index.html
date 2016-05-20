@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        <link href="css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -21,30 +21,69 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
+    <header id="header" class="clearfix">
+    <div class="container-fluid">
+      <div id="logo">
+        <a href="/" title="Go to the Homepage">Simple-art-site</a>
       </div>
-    </nav>
+      <ul id="user-links" class="hidden-xs hidden-sm clearfix">
+        <li>
+          <a href="/users/login">
+            <i class="fa fa-user"></i>
+            <span>Login</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://timesheets.dakota6.co.uk/login.aspx" target="_blank">
+            <i class="fa fa-clock-o"></i>
+            <span>Signup</span>
+          </a>
+        </li>
+      </ul>
+      <nav id="main-nav" class="hidden-xs hidden-sm">
+        <div class="clearfix">
+          <ul class="clearfix navigation_list">
+            <li class="">
+              <a href="/about" target="">Home</a>
+            </li>
+            <li class="">
+              <a href="/about" target="">About Us</a>
+            </li>
+            <li class="">
+              <a href="/contact-us" target="">Contact Us</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" target="">Categories</a>
+                <ul class="dropdown-menu">
+                  <li class="">
+                    <a href="/disciplines/education" target="">Education</a>
+                  </li>
+                  <li class="">
+                    <a href="/disciplines/manufacturing" target="">Manufacturing</a>
+                  </li>
+                  <li class="">
+                    <a href="/disciplines/construction" target="">Construction</a>
+                  </li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="utility-nav" class="visible-xs visible-sm">
+        <a class="mobile-btn" href="#menu"><span>Menu</span><i class="fa fa-bars"></i></a>
+        <nav id="menu">
+          <div>
+            <ul class="menu">
+              <li><a href="/users"><i class="fa fa-user"></i>Your Account</a></li>
+              <li><a href="/users/logout"><i class="fa fa-sign-in"></i>Logout</a></li>
+              <li><a href="/users/register/new/registration"><i class="fa fa-user-plus"></i>Register</a></li>
+              <li><a href="/users/login"><i class="fa fa-sign-out"></i>Login</a></li>
+            </ul>
+          </div>
+        </nav>
+      </nav>
+    </div>
+    </header>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
@@ -80,12 +119,10 @@
       <footer>
         <p>&copy; Company 2015</p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
+    </div> <!-- /container -->       
+      <script src="js/vendor/jquery.min.js"></script>
+      <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
