@@ -8,7 +8,7 @@
                 "includePaths": [
                     "../bower_components/bourbon/app/assets/stylesheets/"
                 ],
-                "outputDir": "../css/",
+                "outputDir": "../css1/",
                 "imagePath": null,
                 "sourceComments": false,
                 "outputStyle": "nested"
