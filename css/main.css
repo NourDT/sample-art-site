@@ -4,14 +4,41 @@
    Author's custom styles
    ========================================================================== */
 
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 62.5%;
+}
 
-.trans, #header, #header #user-links li a, #header #user-links li a span, #header #main-nav ul.navigation_list > li a, #header #main-nav ul.navigation_list > li a:after {
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4;
+  text-align: left;
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+body > div {
+  position: relative;
+}
+body > div.mm-page {
+  overflow: hidden;
+}
+body:before, body:after {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.trans, #header, #header #user-links li a, #header #user-links li a span, #header #main-nav .navigation_list > li a, #header #main-nav .navigation_list > li a:after {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.fa, #header #main-nav ul.navigation_list > li.dropdown > a:after {
+.fa, #header #main-nav .navigation_list > li.dropdown > a:after {
   display: inline-block;
   font-family: FontAwesome;
   text-rendering: auto;
@@ -27,6 +54,7 @@
   width: 100%;
   padding: 0;
   z-index: 10;
+  overflow: hidden;
 }
 #header .container-fluid {
   padding-right: 0;
@@ -44,7 +72,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: url('/images/images/logo.png') no-repeat center center;
+  background: url('../diet-joke.png') no-repeat center center;
   background-size: contain;
   text-indent: -9999px;
 }
@@ -86,6 +114,7 @@
 }
 #header #user-links li:nth-of-type(2) a {
   background: #981984;
+  /* height: 100%; */
 }
 #header #user-links li:nth-of-type(3) a {
   background: #006ebb;
@@ -110,77 +139,78 @@
   position: relative;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
-  font-size: 1.4rem;
   font-weight: 600;
   line-height: 100%;
+  font-size: 0;
 }
-#header #main-nav ul.navigation_list {
+#header #main-nav .navigation_list {
   position: relative;
   list-style: none;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-#header #main-nav ul.navigation_list > li {
+#header #main-nav .navigation_list > li {
   position: relative;
   display: inline-block;
 }
-#header #main-nav ul.navigation_list > li a {
+#header #main-nav .navigation_list > li a {
   display: block;
   padding: 37px 9px;
   color: #ffffff;
   font-family: "Raleway", sans-serif;
   position: relative;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
-#header #main-nav ul.navigation_list > li a:after {
+#header #main-nav .navigation_list > li a:after {
   margin: 0 0 0 4px;
   color: #006ebb;
 }
-#header #main-nav ul.navigation_list > li:hover > a, #header #main-nav ul.navigation_list > li.active > a {
+#header #main-nav .navigation_list > li:hover > a, #header #main-nav .navigation_list > li.active > a {
   text-decoration: none;
   background: #006ebb;
 }
-#header #main-nav ul.navigation_list > li:hover > a:after {
+#header #main-nav .navigation_list > li:hover > a:after {
   color: #fff;
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-#header #main-nav ul.navigation_list > li.active > a {
+#header #main-nav .navigation_list > li.active > a {
   border-color: #ac1991;
   background: #981984;
 }
-#header #main-nav ul.navigation_list > li > ul {
+#header #main-nav .navigation_list > li > ul {
   display: none;
 }
-#header #main-nav ul.navigation_list > li.dropdown > a:after {
+#header #main-nav .navigation_list > li.dropdown > a:after {
   display: inline-block;
   content: '\f078';
 }
-#header #main-nav ul.navigation_list > li.dropdown:hover > ul.dropdown-menu {
+#header #main-nav .navigation_list > li.dropdown:hover > ul.dropdown-menu {
   padding: 0;
   display: block;
   border: 0;
   background: #1b1b1b;
 }
-#header #main-nav ul.navigation_list > li.dropdown:hover > ul.dropdown-menu li {
+#header #main-nav .navigation_list > li.dropdown:hover > ul.dropdown-menu li {
   float: none;
 }
-#header #main-nav ul.navigation_list > li.dropdown:hover > ul.dropdown-menu li a {
+#header #main-nav .navigation_list > li.dropdown:hover > ul.dropdown-menu li a {
   color: #fff;
   padding: 10px 25px;
   font-weight: 600;
 }
-#header #main-nav ul.navigation_list > li.dropdown:hover > ul.dropdown-menu li.active > a {
+#header #main-nav .navigation_list > li.dropdown:hover > ul.dropdown-menu li.active > a {
   background: #981984;
   color: #fff;
 }
-#header #main-nav ul.navigation_list > li.dropdown:hover > ul.dropdown-menu li:hover a {
+#header #main-nav .navigation_list > li.dropdown:hover > ul.dropdown-menu li:hover a {
   background: #006ebb;
   color: #fff;
 }
-#header #main-nav ul.navigation_list > li.dropdown:hover > ul.dropdown-menu li.dropdown:hover > ul.dropdown-menu {
+#header #main-nav .navigation_list > li.dropdown:hover > ul.dropdown-menu li.dropdown:hover > ul.dropdown-menu {
   display: block;
   left: 100%;
   top: 0;
@@ -197,29 +227,20 @@
     margin: 5px 0 5px 15px;
     width: 165px;
   }
-  #header #main-nav {
-    font-size: 11px;
-    font-size: 1.1rem;
-  }
-  #header #main-nav ul.navigation_list > li a {
-    padding: 30px 5px;
-  }
-  #header #main-nav ul.navigation_list > li.dropdown:hover > ul.dropdown-menu {
+
+  #header #main-nav .navigation_list > li.dropdown:hover > ul.dropdown-menu {
     font-size: 11px;
   }
   #header #user-links li a {
     font-size: 20px;
   }
   #header #user-links li a {
-    padding: 25px 5px 26px 7px;
+    padding: 27px 5px 27px 7px;
   }
   #header #user-links li a span {
     font-size: 12px;
     line-height: 1.8;
     letter-spacing: 1px;
-  }
-  #header #user-links li:nth-of-type(1) a span {
-    width: 100px;
   }
   #header #user-links:hover li a span {
     width: 0;
