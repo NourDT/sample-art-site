@@ -32,7 +32,7 @@ body:before, body:after {
   line-height: 1.5;
 }
 
-.trans, #header, #header #user-links li a, #header #user-links li a span, #header #main-nav .navigation_list > li a, #header #main-nav .navigation_list > li a:after {
+.trans *, .trans *:after, .trans *:before {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -54,7 +54,6 @@ body:before, body:after {
   width: 100%;
   padding: 0;
   z-index: 10;
-  overflow: hidden;
 }
 #header .container-fluid {
   padding-right: 0;
@@ -72,7 +71,7 @@ body:before, body:after {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../diet-joke.png') no-repeat center center;
+  background: url('../img/diet-joke.png') no-repeat center center;
   background-size: contain;
   text-indent: -9999px;
 }
@@ -193,6 +192,7 @@ body:before, body:after {
   display: block;
   border: 0;
   background: #1b1b1b;
+  margin-top: 0px;
 }
 #header #main-nav .navigation_list > li.dropdown:hover > ul.dropdown-menu li {
   float: none;
@@ -268,3 +268,278 @@ body:before, body:after {
     width: 180px;
   }
 }
+ /*main-banner*/
+ #main-banner{
+  position: relative;
+  width: 100%;
+  background: #f8f8f8;
+  height: 700px; }
+  #main-banner > figure {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;}
+    #main-banner > figure img, #sub-banner > figure img, #global-banner > figure img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: .6;
+      object-fit: cover; }
+  #main-banner > article, #sub-banner > article, #global-banner > article {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    width: 60%;
+    left: 50px; }
+    #main-banner > article h1, #sub-banner > article h1, #global-banner > article h1 {
+      font-family: "Raleway", sans-serif;
+      font-size: 80px;
+      font-size: 8rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 0 0 80px;
+      text-transform: uppercase;
+      line-height: 1.1;
+      letter-spacing: 0px; }
+      #main-banner > article h1 strong, #sub-banner > article h1 strong, #global-banner > article h1 strong {
+        color: #981984;
+        font-weight: 800; }
+    #main-banner > article p, #sub-banner > article p, #global-banner > article p {
+      font-family: "Raleway", sans-serif;
+      font-size: 25px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1.1;
+      letter-spacing: 4px; }
+      #main-banner > article p strong, #sub-banner > article p strong, #global-banner > article p strong {
+        color: #981984;
+        font-weight: 800; }
+  #main-banner > aside, #sub-banner > aside, #global-banner > aside {
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    width: 100%;
+    max-width: 1400px;
+    left: 50px; }
+    #main-banner > aside > form ::-webkit-input-placeholder, #sub-banner > aside > form ::-webkit-input-placeholder, #global-banner > aside > form ::-webkit-input-placeholder {
+      color: #fff; }
+    #main-banner > aside > form :-moz-placeholder, #sub-banner > aside > form :-moz-placeholder, #global-banner > aside > form :-moz-placeholder {
+      color: #fff; }
+    #main-banner > aside > form ::-moz-placeholder, #sub-banner > aside > form ::-moz-placeholder, #global-banner > aside > form ::-moz-placeholder {
+      color: #fff; }
+    #main-banner > aside > form :-ms-input-placeholder, #sub-banner > aside > form :-ms-input-placeholder, #global-banner > aside > form :-ms-input-placeholder {
+      color: #fff; }
+    #main-banner > aside > form dl dd{
+      display: inline-block;
+      vertical-align: top; }
+    #main-banner > aside > form dl dd.input {
+      width: 45%; }
+    #main-banner > aside > form dl dd.actions {
+      width: 9%; }
+    #main-banner > aside > form dl input{
+      width: 90%;
+      padding: 8px 0 8px 15px;
+      background: transparent;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      outline: none;
+          text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+      border: 0;
+      border-bottom: 2px solid #fff; }
+    #main-banner > aside > form dl button{
+      background: transparent;
+      border: 0;
+      font-size: 24px;
+      padding: 5px 12px 6px;
+      border-bottom: 1px solid transparent;
+      color: #fff; }
+      #main-banner > aside > form dl button:hover{
+        border-color: #fff;
+        color: #981984; }
+    #main-banner > aside > form dl dd.input:nth-of-type(1) input:focus{
+      border-color: #981984; }
+    #main-banner > aside > form dl dd.input:nth-of-type(2) input:focus{
+      border-color: #006ebb; }
+    #main-banner > aside > a, #sub-banner > aside > a {
+      display: block;
+      font-family: "Raleway", sans-serif;
+      letter-spacing: 5px;
+      padding: 10px 15px;
+      font-size: 22px;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600; }
+      #main-banner > aside > a i, #sub-banner > aside > a i {
+        float: right;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 300; }
+      #main-banner > aside > a:after, #sub-banner > aside > a:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.5);
+        margin: 15px 0 0; }
+  @media (max-width: 1399px) {
+    #main-banner > article h1, #sub-banner > article h1 {
+      font-size: 60px;
+      font-size: 6rem; }
+    #main-banner > aside, #sub-banner > aside{
+      width: calc(100% - 100px); } }
+  @media (max-width: 991px) {
+    #main-banner > aside > form dl dd, #sub-banner > aside > form dl dd{
+      width: 100% !important; }
+    #main-banner > aside > form dl input, #sub-banner > aside > form dl input, #global-banner > aside > form dl input {
+      font-size: 18px;
+      font-size: 1.8rem;
+      letter-spacing: 0px;
+      width: 100%; } }
+  @media (max-width: 767px) {
+    #main-banner > article, #sub-banner > article, #global-banner > article {
+      width: initial;
+      left: 15px;
+      right: 15px; }
+      #main-banner > article h1, #sub-banner > article h1, #global-banner > article h1 {
+        font-size: 20px;
+        font-size: 2rem;
+        margin: 0 0 25px; }
+      #main-banner > article p, #sub-banner > article p, #global-banner > article p {
+        font-size: 16px;
+        font-size: 1.6rem; }
+    #main-banner > aside, #sub-banner > aside, #global-banner > aside {
+      width: initial;
+      left: 15px;
+      right: 15px;
+      bottom: 70px; }
+      #main-banner > aside a, #sub-banner > aside a, #global-banner > aside a {
+        letter-spacing: 2px;
+        padding: 10px 0px;
+        font-size: 14px;
+        font-size: 1.4rem; }
+      #main-banner > aside > form dl input, #sub-banner > aside > form dl input, #global-banner > aside > form dl input {
+        font-size: 14px;
+        font-size: 1.4rem;
+        letter-spacing: 0px;
+        width: 100%; } }
+        
+/*categorys*/
+#categories * {
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+#categories {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: #000 url(/img/old-man-web.jpg) 0 0 no-repeat;
+  
+}
+  #categories .category {
+    display: table-cell;
+    width: calc(100%/ 5);
+    float: left;
+    height: 100%;
+    padding: 0 20px;
+    position: relative; }
+    #categories .category figure {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #1b1b1b; }
+      #categories .category figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: 0.6; }
+    #categories .category article {
+      position: relative;
+      display: block;
+      vertical-align: middle;
+      width: 100%;
+      /* opacity: 0; */
+      }
+      #categories .category article span {
+        font-size: 15px;
+        font-size: 1.5rem;
+        display: block;
+        color: #fff;
+        margin: 0 0 15px;
+        font-weight: 600;
+        color: #fff;}
+      #categories .category article h3 {
+        font-size: 18px;
+        font-size: 1.8rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        letter-spacing: 4px;
+        color: #fff;
+        margin: 0 0 20px; }
+      #categories .category article p {
+        opacity: 0;
+        pointer-events: none;
+        color: white;
+        }
+  #categories:hover .category {
+    width: 15%; }
+   #categories .category:last-of-type{
+     width: calc( 100% / 5)  !important;
+     position: absolute;
+     right: 0;
+   }
+   #categories:hover article{
+     position: absolute;
+     width: calc(40vw - 50px)
+   }
+   #categories:hover .category:last-of-type{
+     width: 15%  !important;
+   }
+   #categories:hover .category:last-of-type:hover{
+     width:40%  !important;
+   }
+    #categories:hover .category article {
+      opacity: 0;
+      }
+    #categories:hover .category:hover {
+      width: 40%; }
+      #categories:hover .category:hover article {
+        opacity: 1;
+        }
+      #categories:hover .category:hover figure img {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%); }
+      #categories:hover .category:hover p {
+        display: block;
+        opacity: 1;
+        pointer-events: initial; 
+        color: white;
+      }
+  @media (max-width: 991px) {
+    #categories .category:nth-of-type(5), #categories .category:nth-of-type(4) {
+      display: none; }
+    #categories .category {
+      width: calc(100%/ 3); }
+    #categories:hover .category {
+      width: 25%; }
+      #categories:hover .category:hover {
+        width: 50%; } }
+  @media (max-width: 768px) {
+    #categories .category {
+      width: 100%;
+      height: calc(100% / 3); } }
