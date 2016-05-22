@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/sass-stuff.css">
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/jquery.mmenu.min.all.js"></script>
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,900italic,500,600,700,800,900' rel='stylesheet' type='text/css'>
 
     <!--<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
@@ -29,20 +32,39 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <nav id="menu">
+    	<ul class="">
+    		<li class=""><a href="#" target="">Home</a></li>
+    		<li class=""><a href="#" target="">About Us</a></li>
+    		<li class="dropdown"><a href="#" target="">Categories</a>
+    		    <ul class="dropdown-menu">
+    		        <li><a href="" target="">Carving</a></li>
+					<li><a href="" target="">Painting</a></li>
+					<li><a href="" target="">Caricature</a></li>
+					<li><a href="" target="">Photography</a></li>
+					<li><a href="" target="">Fine Arts</a></li>
+    		    </ul>
+    		</li>
+    		<li class=""><a href="#" target="">Contact us</a></li>
+    	</ul>
+    </nav>
+    <div class="page_wrapper">
+        
+    
     <header id="header" class="clearfix trans">
         <div class="container-fluid">
             <div id="logo">
-                <a href="/" title="Go to the Homepage">Simple-art-site</a>
+                <a href="#" title="Go to the Homepage">Simple-art-site</a>
             </div>
             <ul id="user-links" class="hidden-xs hidden-sm clearfix">
                 <li>
-                    <a href="/users/login">
+                    <a href="#">
                         <i class="fa fa-user"></i>
                         <span>Signup</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://timesheets.dakota6.co.uk/login.aspx" target="_blank">
+                    <a href="#">
                         <i class="fa fa-sign-in"></i>
                         <span>Login</span>
                     </a>
@@ -52,47 +74,40 @@
                 <div class="clearfix">
                     <ul class="clearfix navigation_list">
                         <li class="">
-                            <a href="/about" target="">Home</a>
+                            <a href="#" target="">Home</a>
                         </li>
                         <li class="">
-                            <a href="/about" target="">About Us</a>
-                        </li>
-                        <li class="">
-                            <a href="/contact-us" target="">Contact Us</a>
+                            <a href="#" target="">About Us</a>
                         </li>
                         <li class="dropdown">
                             <a href="#" target="">Categories</a>
                             <ul class="dropdown-menu">
                                 <li class="">
-                                    <a href="/disciplines/education" target="">Education</a>
+                                    <a href="/disciplines/education" target="">Carving</a>
                                 </li>
                                 <li class="">
-                                    <a href="/disciplines/manufacturing" target="">Manufacturing</a>
+                                    <a href="/disciplines/manufacturing" target="">Painting</a>
                                 </li>
                                 <li class="">
-                                    <a href="/disciplines/construction" target="">Construction</a>
+                                    <a href="/disciplines/construction" target="">Caricature</a>
+                                </li>
+                                <li class="">
+                                    <a href="/disciplines/construction" target="">Photography</a>
+                                </li>
+                                <li class="">
+                                    <a href="/disciplines/construction" target="">Fine Arts</a>
                                 </li>
                             </ul>
                         </li>
+                        <li class="">
+                            <a href="/contact-us" target="">Contact Us</a>
+                        </li>
+                        
                     </ul>
                 </div>
             </nav>
             <nav id="utility-nav" class="visible-xs visible-sm">
-                <a class="mobile-btn" href="#menu"><span>Menu</span><i class="fa fa-bars"></i></a>
-                <nav id="menu">
-                    <div>
-                        <ul class="menu">
-                            <li><a href="/users"><i class="fa fa-user"></i>Your Account</a>
-                            </li>
-                            <li><a href="/users/logout"><i class="fa fa-sign-in"></i>Logout</a>
-                            </li>
-                            <li><a href="/users/register/new/registration"><i class="fa fa-user-plus"></i>Register</a>
-                            </li>
-                            <li><a href="/users/login"><i class="fa fa-sign-out"></i>Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                <a class="mobile-btn" href="#menu"><i class="fa fa-bars"></i></a>
             </nav>
         </div>
     </header>
@@ -104,9 +119,6 @@
       <figure>
         <img alt="" src="img/old-man-web.jpg">
       </figure>
-      <article>
-        <h1>فن تشكيلي ظريف وكيوت :3</h1>
-      </article>
       <aside>
         <form accept-charset="UTF-8" action="/searches" id="search" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div><input id="authenticity_token" name="authenticity_token" type="hidden" value="tQx3EFtFdKFqrv0g+P1jdTzLPSs7Ari77y1QkKx6Qm4=">
                 <dl class="clearfix">
@@ -142,7 +154,7 @@
                 </div>
                 <ul>
                     <li>
-                        <div id="A3-left-title-1"><a href="spore-post1.html">Post a Youtube video</a>
+                        <div id="A3-left-title-1"><a href="#">Post a Youtube video</a>
                         </div>
                     </li>
                 </ul>
@@ -150,7 +162,7 @@
             </div>
 
             <div id="wrapper-post2" class="text-part-A5">
-                <a href="spore-post2.html">
+                <a href="#">
                     <div id="A3-left-image-2">
                         <img src="grid-images/image1-01.jpg" alt="post an image with animation" title="post an image with animation" class="grow" />
                     </div>
@@ -162,7 +174,7 @@
                 </div>
                 <ul>
                     <li>
-                        <div id="A3-left-title-2"><a href="spore-post2.html">Post an image with animation</a>
+                        <div id="A3-left-title-2"><a href="#">Post an image with animation</a>
                         </div>
                     </li>
                 </ul>
@@ -170,7 +182,7 @@
             </div>
 
             <div id="wrapper-post3" class="text-part-A5">
-                <a href="spore-post3.html">
+                <a href="">
                     <div id="A3-left-image-3">
                         <img src="grid-images/image6-01.jpg" alt="Auto-resized image" title="Auto-resized image" class="grow" />
                     </div>
@@ -182,7 +194,7 @@
                 </div>
                 <ul>
                     <li>
-                        <div id="A3-left-title-3"><a href="spore-post3.html">Auto-resized image</a>
+                        <div id="A3-left-title-3"><a href="#">Auto-resized image</a>
                         </div>
                     </li>
                 </ul>
@@ -194,7 +206,7 @@
         <div id="A3-middle">
 
             <div id="wrapper-post4" class="text-part-A5">
-                <a href="spore-post4.html">
+                <a href="#">
                     <div id="A3-middle-image-4">
                         <img src="grid-images/image3-01.jpg" alt="Another post" title="Another post" class="grow" />
                     </div>
@@ -206,7 +218,7 @@
                 </div>
                 <ul>
                     <li>
-                        <div id="A3-middle-title-4"><a href="spore-post4.html">Another post</a>
+                        <div id="A3-middle-title-4"><a href="#">Another post</a>
                         </div>
                     </li>
                 </ul>
@@ -214,7 +226,7 @@
             </div>
 
             <div id="wrapper-post5" class="text-part-A5">
-                <a href="spore-post5.html">
+                <a href="#">
                     <div id="A3-middle-image-5">
                         <img src="grid-images/image4-01.jpg" alt="Another post" title="Another post" class="grayscale" />
                     </div>
@@ -226,7 +238,7 @@
                 </div>
                 <ul>
                     <li>
-                        <div id="A3-middle-title-5"><a href="spore-post5.html">Post transition image</a>
+                        <div id="A3-middle-title-5"><a href="#">Post transition image</a>
                         </div>
                     </li>
                 </ul>
@@ -245,7 +257,7 @@
                 </div>
                 <ul>
                     <li>
-                        <div id="A3-middle-title-6"><a href="spore-post6.html">Post a Vimeo video</a>
+                        <div id="A3-middle-title-6"><a href="#">Post a Vimeo video</a>
                         </div>
                     </li>
                 </ul>
@@ -268,7 +280,7 @@
                 </div>
                 <ul>
                     <li>
-                        <div id="A3-right-title-7"><a href="spore-post7.html">Another video post</a>
+                        <div id="A3-right-title-7"><a href="#">Another video post</a>
                         </div>
                     </li>
                 </ul>
@@ -276,7 +288,7 @@
             </div>
 
             <div id="wrapper-post8" class="text-part-A5">
-                <a href="spore-post8.html">
+                <a href="#">
                     <div id="A3-right-image-8">
                         <img src="grid-images/image5-01.jpg" alt="Post with transition image" title="Post with transition image" class="grow" />
                     </div>
@@ -288,7 +300,7 @@
                 </div>
                 <ul>
                     <li>
-                        <div id="A3-right-title-8"><a href="spore-post8.html">Another post</a>
+                        <div id="A3-right-title-8"><a href="#">Another post</a>
                         </div>
                     </li>
                 </ul>
@@ -296,7 +308,7 @@
             </div>
 
             <div id="wrapper-post9" class="text-part-A5">
-                <a href="spore-post9.html">
+                <a href="#">
                     <div id="A3-right-image-9">
                         <img src="grid-images/image2-01.jpg" alt="Another post" title="Another post" class="grow" />
                     </div>
@@ -308,7 +320,7 @@
                 </div>
                 <ul>
                     <li>
-                        <div id="A3-right-title-9"><a href="spore-post9.html">Another post</a>
+                        <div id="A3-right-title-9"><a href="#">Another post</a>
                         </div>
                     </li>
                 </ul>
@@ -322,72 +334,87 @@
     <!-- START OF CATEGORIES -->
     <section id="categories" class="clearfix" style="height: 640px;">
     	
-    		<a href="/category/2016/05/manufacturing-essential-to-uk" class="category">
+    		<a href="#" class="category">
     			
     			<figure>
     				<img alt="" src="img/brushes.jpg">
     			</figure>
     			
     			<article>
-    				<span class="date">06 May 2016</span>
-    				<h3>Manufacturing is essential!</h3>
-    				<p>Economics professor Patrick Minford, who supports the Brexit campaign, said recently that ‘if we left the EU, it seems that we would mostly eliminate manufacturing.’ Minford – who was a major propo...</p>
+    				<h3>Carving</h3>
+    				<p>Lorem ipsum dolor sit amet, ei tale ocurreret vim. Homero quidam discere per cu, nec prompta labitur ea. Denique erroribus mea te. In quot voluptatum his, vis alienum fabellas ne.</p>
     			</article>
     		</a>
     	
-    		<a href="/category/2016/04/construction-workers-payout" class="category">
+    		<a href="#" class="category">
     			
     			<figure>
     				<img alt="" src="img/old-camera-web.jpg">
     			</figure>
     			
     			<article>
-    				<span class="date">22 April 2016</span>
-    				<h3>Construction workers win payouts.</h3>
-    				<p>Workers who say they were blacklisted by construction companies have won millions in compensation after a long-running legal battle finally ended. The union Unite has reached a settlement with cons...</p>
+    				<h3>Photography</h3>
+    				<p>Lorem ipsum dolor sit amet, ei tale ocurreret vim. Homero quidam discere per cu, nec prompta labitur ea. Denique erroribus mea te. In quot voluptatum his, vis alienum fabellas ne.</p>
     			</article>
     		</a>
     	
-    		<a href="/category/2016/04/recruiting-from-overseas" class="category">
+    		<a href="#" class="category">
     			
     			<figure>
     				<img alt="" src="img/umbrellas-web.jpg">
     			</figure>
     			
     			<article>
-    				<span class="date">22 April 2016</span>
-    				<h3>Recruiting from overseas.</h3>
-    				<p>TEACHERS are to be recruited from Austalia, Ireland and Lancashire in a bid to plug hundreds of vacancies in Essex Essex County Council has joined forces with schools to attract teachers from overs...</p>
+    				<h3>Fine Art</h3>
+    				<p>Lorem ipsum dolor sit amet, ei tale ocurreret vim. Homero quidam discere per cu, nec prompta labitur ea. Denique erroribus mea te. In quot voluptatum his, vis alienum fabellas ne.</p>
     			</article>
     		</a>
     	
-    		<a href="/category/2016/04/computing-gcse-comprimised" class="category">
+    		<a href="#" class="category">
     			
     			<figure>
     				<img alt="" src="img/paint-web.jpg">
     			</figure>
     			
     			<article>
-    				<span class="date">22 April 2016</span>
-    				<h3>Teachers fear computing GCSE is 'compromised'</h3>
-    				<p>Teachers fear a GCSE exam in computing has been "blatantly compromised" after students found answers to a controlled assessment task in a course textbook. One teacher said his class had produced al...</p>
+    				<h3>Painting</h3>
+    				<p>Lorem ipsum dolor sit amet, ei tale ocurreret vim. Homero quidam discere per cu, nec prompta labitur ea. Denique erroribus mea te. In quot voluptatum his, vis alienum fabellas ne.</p>
     			</article>
     		</a>
     	
-    		<a href="/category/2016/02/new-website" class="category">
+    		<a href="#" class="category">
     			
     			<figure>
-    				<img alt="" src="img/old-man-web.jpg">
+    				<img alt="" src="img/pexels-photo-min.jpg">
     			</figure>
     			
     			<article>
-    				<span class="date">22 February 2016</span>
-    				<h3>New Website</h3>
-    				<p>Welcome to the new look D6 website. Here are some of the things you will find when having a look around. Jobs All of our vacancies across Education, Manufacturing and Construction will be advertise...</p>
+    				<h3>Caricature</h3>
+    				<p>Lorem ipsum dolor sit amet, ei tale ocurreret vim. Homero quidam discere per cu, nec prompta labitur ea. Denique erroribus mea te. In quot voluptatum his, vis alienum fabellas ne.</p>
     			</article>
     		</a>
     </section>
     <!--END OF CATEGORIES-->
+    
+    <!--TEXT section | START -->
+    <div id="text-section">
+        <div class="container">
+                <div class="col-md-12">
+                    <h1>Epic Title gose here</h1>
+                    <p>Lorem ipsum dolor sit amet, mei diam vituperata ea, sed atqui novum appellantur ex, qui at dicta utamur. Ad nam iusto ornatus suscipit, soleat propriae ea has. Dictas omittam moderatius ex mel, dicam fabulas accusata in vis. Et paulo cetero volumus mel.
+    
+    Simul prodesset interesset ut pri, prima movet vidisse in cum. Cu reprimique referrentur consequuntur has. Wisi incorrupte ad eos, mei ei denique deseruisse. Vim in dolore omittam, cum ex adhuc facilisis, cum et regione aperiri. Tale iuvaret qui cu.
+    
+    Aperiri appareat no vim. Ea eam sonet numquam deserunt, pro ex soleat regione. Quas laoreet ius ei, mea ei maiorum mandamus principes. Ne vix velit dicant intellegat, vim eius dignissim disputationi et. Aeque oratio aperiam id cum. Causae inermis ceteros mel an. Te vis salutandi dignissim hendrerit.
+    
+    Case impedit assueverit usu eu, te malorum elaboraret disputationi his. In pri mentitum insolens, vim no libris repudiare signiferumque. Pro legimus lucilius ea. Mazim suscipiantur ne pri, his option constituto ex. Prima delicata intellegebat pro cu, ex mea alienum lobortis consetetur. An vim altera ocurreret suscipiantur, mundi pertinacia assueverit eum an, an vel integre petentium.
+    
+    Et mea ignota gubergren quaerendum, mei vide volutpat dissentiet ei. Ea sed habeo iisque commune, nisl sale ne sed. Pri cu esse porro erant, his ei tale explicari. At has modus fabulas argumentum, ne nam posse minim elaboraret. Pro in exerci postulant delicatissimi, erant atomorum salutandi vis ne. Suas meis sapientem ius in. Duis aperiam repudiare pro ex, eam in partem molestie.</p>
+                </div>
+        </div>
+    </div>
+    <!--TEXT section |  END  -->
+    
     
     <!--START OF GALLERY-->
     <div class="container-fluid" id="shop">
@@ -396,18 +423,18 @@
 					<div class="col-md-4 left nopadding">
 						<div class="left-box-1">
 							<div class="img">
-								<img src="gallery/l1.jpg" alt="Leather Seats">
+								<img src="gallery/1.jpeg" alt="Leather Seats">
 								<div class="overlay">
-									<a href="http://google.com/" class="expand">leather seats</a>
+									<a href="http://google.com/" class="expand">Art Work X</a>
 									<a class="close-overlay hidden">x</a>
 								</div>
 							</div>
 						</div>
 						<div class="left-box-2 box">
 							<div class="img">
-								<img src="gallery/l2.jpg" alt="Custom Seats">
+								<img src="gallery/12.jpg" alt="Custom Seats">
 								<div class="overlay">
-									<a href="#" class="expand">custom seats</a>
+									<a href="#" class="expand">Art Work X</a>
 									<a class="close-overlay hidden">x</a>
 								</div>
 							</div>
@@ -415,9 +442,9 @@
 						<div class="clearfix"></div>
 						<div class="left-box-btm box">
 							<div class="img">
-								<img src="gallery/l3.jpg" alt="Limited Edition">
+								<img src="gallery/13.jpg" alt="Limited Edition">
 								<div class="overlay">
-									<a href="#" class="expand">limited edition</a>
+									<a href="#" class="expand">Art Work X</a>
 									<a class="close-overlay hidden">x</a>
 								</div>
 							</div>
@@ -426,18 +453,18 @@
 					<div class="col-md-4 mid nopadding">
 						<div class="mid-box-1 box">
 							<div class="img">
-								<img src="gallery/l4.jpg" alt="Shop Bags">
+								<img src="gallery/14.jpg" alt="Shop Bags">
 								<div class="overlay">
-									<a href="#" class="expand">shop bags</a>
+									<a href="#" class="expand">Art Work X</a>
 									<a class="close-overlay hidden">x</a>
 								</div>
 							</div>
 						</div>
 						<div class="mid-box-2 box">
 							<div class="img">
-								<img src="gallery/l5.jpg" alt="Shop Bikes">
+								<img src="gallery/15.jpg" alt="Shop Bikes">
 								<div class="overlay">
-									<a href="#" class="expand">shop bikes</a>
+									<a href="#" class="expand">Art Work X</a>
 									<a class="close-overlay hidden">x</a>
 								</div>
 							</div>
@@ -447,27 +474,27 @@
 					<div class="col-md-4 right nopadding">
 						<div class="right-box-1 box">
 							<div class="img">
-								<img src="gallery/l6.jpg" alt="Shop Now">
+								<img src="gallery/16.jpg" alt="Shop Now">
 								<div class="overlay">
-									<a href="#" class="expand">shop now</a>
+									<a href="#" class="expand">Art Work X</a>
 									<a class="close-overlay hidden">x</a>
 								</div>
 							</div>
 						</div>
 						<div class="right-box-2 box">
 							<div class="img">
-								<img src="gallery/l7.jpg" alt="Shop Seats">
+								<img src="gallery/17.jpg" alt="Shop Seats">
 								<div class="overlay">
-									<a href="#" class="expand">shop seats</a>
+									<a href="#" class="expand">Art Work X</a>
 									<a class="close-overlay hidden">x</a>
 								</div>
 							</div>
 						</div>
 						<div class="right-box-3 box">
 							<div class="img">
-								<img src="gallery/l8.jpg" alt="Shop Accessories">
+								<img src="gallery/18.jpg" alt="Shop Accessories">
 								<div class="overlay">
-									<a href="#" class="expand">shop accessories</a>
+									<a href="#" class="expand">Art Work X</a>
 									<a class="close-overlay hidden">x</a>
 								</div>
 							</div>
@@ -477,10 +504,29 @@
 			</div>
 		</div>
     <!--END OF GALLERY-->
+    </div>
     
-    <script src="js/vendor/jquery.min.js"></script>
+    <footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 text-left text-center-mobile">
+			 Made with <i class="fa fa-heart heart"></i> by <a href="http://www.Skuares.com"><img alt="" src="img/Skuares_footer.png" style="width:5%; vertical-align:middle;"> Skuares 2016 &copy;</a>.
+			</div>
+			<div class="col-sm-6 text-right text-center-mobile">
+				<div class="social">
+					<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+					<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+					<a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a>
+					<a href="#" class="vine"><i class="fa fa-vine"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/modernizr.js"></script>
+    
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

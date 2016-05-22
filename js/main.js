@@ -1,5 +1,12 @@
 
 $(document).ready(function(){
+		$("#menu").mmenu({
+			offCanvas: {
+				position: "right",
+				pageSelector: '#page_wrapper'
+			}
+
+		});
 	$('#main-banner').height($(window).height() - $('#header').height());
 
     if (Modernizr.touch) {
@@ -30,7 +37,18 @@ $(document).ready(function(){
     .mouseleave(function() {
       $(this).removeClass("hover");
     });
-  }  
+  } 
+  // function stick(){
+    
+  //   var target = $('#categories .category:nth-of-type(4)');
+  //   var offset = $('#categories .category:nth-of-type(4)').offset();
+  //   $('#categories .category:last-of-type').animate(
+  //     'left', offset.left + $('#categories .category:nth-of-type(4)').outerWidth() 
+  //   );
+  //   console.log('hi')
+  //   window.setTimeout(stick(), 30);
+  // };
+  // stick();
 });
 
 

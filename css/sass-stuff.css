@@ -70,8 +70,8 @@ body:before, body:after {
 #header #logo a {
   display: block;
   width: 100%;
-  height: 100%;
-  background: url('../img/diet-joke.png') no-repeat center center;
+  height: 80%;
+  background: url('../img/logo.png') no-repeat center center;
   background-size: contain;
   text-indent: -9999px;
 }
@@ -82,6 +82,8 @@ body:before, body:after {
   position: absolute;
   right: 0;
   z-index: 2;
+  max-height: 100%;
+  overflow: hidden;
 }
 #header #user-links li {
   display: inline-block;
@@ -261,6 +263,23 @@ body:before, body:after {
 @media (max-width: 991px) {
   #header #logo {
     width: 220px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  #utility-nav{
+    display: inline-block !important;
+    font-size: 21px;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 100%;
+    padding: 17px;
+    float: right;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  #utility-nav a{
+    color: #fff;
   }
 }
 @media (max-width: 768px) {
@@ -469,11 +488,11 @@ body:before, body:after {
         filter: grayscale(100%);
         opacity: 0.6; }
     #categories .category article {
-      position: relative;
+      position: absolute;
       display: block;
-      vertical-align: middle;
       width: 100%;
-      /* opacity: 0; */
+      top: 50%;
+      transform: translateY(-50%);
       }
       #categories .category article span {
         font-size: 15px;
@@ -505,7 +524,10 @@ body:before, body:after {
    }
    #categories:hover article{
      position: absolute;
-     width: calc(40vw - 50px)
+     width: calc(40vw - 50px);
+     top: 50%;
+     transform: translateY(-50%);
+     right: 0;
    }
    #categories:hover .category:last-of-type{
      width: 15%  !important;
@@ -542,4 +564,25 @@ body:before, body:after {
   @media (max-width: 768px) {
     #categories .category {
       width: 100%;
-      height: calc(100% / 3); } }
+      height: calc(100% / 3);
+      text-decoration: none;} 
+    #categories:hover .category:hover{
+         width: 100% !important;
+       }
+       #categories:hover .category{
+         width: 100% !important;
+       }
+       #categories:hover article{
+         width: 100%;
+       }
+       #categories .category article{
+         opacity: 1;
+       }
+       #categories:hover article{
+         position: relative;
+         right: initial;
+       }
+       #categories .category article p{
+         opacity: 1;
+       }
+  }
